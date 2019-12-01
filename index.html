@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		html{font-family: 'Noto Sans KR', sans-serif;}
+		body{margin: 0; 
+			padding: 0; 
+			background-color: #fffcb0;
+			color: #331615;
+			}
+		img{width: 30%;
+			position: absolute;
+			left: 500px;
+			top: 78px;}
+		h2{position: absolute;
+			left: 500px;
+			top: 400px;}
+  		@keyframes ccc{
+			to{left: 200px;
+				opacity: 1;}
+		}
+		@keyframes cc{
+			to{left: 500px;
+				opacity: 1;}
+		}
+	</style>
+</head>
+<body>
+	<img src="turtle.jpg">
+
+<script type="text/javascript">
+	
+	var text0 = "거북이는@ 엉덩이로 @숨을 쉰다.";
+
+	var text = text0.split("@");
+
+for(var i=0; i<text.length; i++){
+	var a = document.createElement("div");
+	a.innerHTML = text[i];
+	a.style.position = 'absolute';
+	a.style.left = 20*i + "px";
+	a.style.top = 90*i + "px";
+	a.style.opacity = 0;
+	a.style.marginTop = 70 + "px";
+	a.style.fontSize = 50 + "px";
+	a.style.fontWeight = "bold";
+	a.style.animation = "ccc 0.5s forwards";
+	a.style.animationDelay = i*0.2 + "s";
+	a.className = "words";
+	document.body.appendChild(a);
+}
+
+	var text0 = "동양비단거북";
+
+	var text = text0.split(" ");
+
+for(var i=0; i<text.length; i++){
+	var a = document.createElement("div");
+	a.innerHTML = text[i];
+	a.style.position = 'absolute';
+	a.style.left = 20*i + "px";
+	a.style.top = 35*i + "px";
+	a.style.opacity = 0;
+	a.style.marginTop = 29 + "%";
+	a.style.fontSize = 20 + "px";
+	a.style.fontWeight = "bold";
+	a.style.animation = "cc 0.5s forwards";
+	a.style.animationDelay = i*2 + "s";
+	a.className = "words";
+	document.body.appendChild(a);
+}
+	
+	var text0 = "거북이는 외부온도에 따라 변하는 변온 동물로 @ 추운 겨울 자신의 체온을 떨어뜨려@ 신진대사 속도를 늦춥니다. @ 이 때 동양비단거북이는 최소한의 @ 호흡을 하기 위해 엉덩이를 이용합니다.";
+
+	var text = text0.split("@ ");
+
+for(var i=0; i<text.length; i++){
+	var a = document.createElement("div");
+	a.innerHTML = text[i];
+	a.style.position = 'absolute';
+	a.style.left = 20*i + "px";
+	a.style.top = 35*i + "px";
+	a.style.opacity = 0;
+	a.style.marginTop = 32 + "%";
+	a.style.fontSize = 18 + "px";
+	a.style.animation = "cc 0.5s forwards";
+	a.style.animationDelay = i*0.7 + "s";
+	a.className = "words";
+	document.body.appendChild(a);
+}
+	
+
+</script>
+
+
+</body>
+</html>
